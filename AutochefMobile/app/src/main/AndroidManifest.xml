@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.g04.autochefmobile">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AutochefMobile">
+        <activity
+            android:name=".activity.ImportShoppingListActivity"
+            android:exported="false"
+            android:label="Importer une liste de courses"
+            android:parentActivityName=".activity.ShoppingListActivity" />
+        <activity
+            android:name=".activity.ShoppingListActivity"
+            android:exported="false"
+            android:label="Mes listes de courses" />
+        <activity
+            android:name=".activity.ShowIngredientsActivity"
+            android:exported="false"
+            android:label="Mes ingrédients"
+            android:parentActivityName=".activity.ShoppingListActivity"/>
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

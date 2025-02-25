@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="1000.0" stylesheets="@../../style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.g04autochef.view.recipe.DisplayRecipeViewController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="907.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="517.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <GridPane prefHeight="570.0" prefWidth="1115.0" styleClass="pane">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="132.0" minHeight="10.0" prefHeight="132.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="66.0" minHeight="-Infinity" prefHeight="0.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="109.0" prefWidth="998.0" styleClass="pane">
+                    <children>
+                        <Label layoutX="14.0" layoutY="43.0" text="personnes">
+                            <graphic>
+                                <Label fx:id="labelNbPerson" text="&lt;nb&gt;">
+                                    <graphic>
+                                        <Label text="pour">
+                                            <graphic>
+                                                <Label fx:id="labelCategory" text="&lt;Catégorie&gt;">
+                                                    <graphic>
+                                                        <Label fx:id="labelCookingStyle" text="&lt;Type&gt;">
+                                             <graphic>
+                                                <Label text=":">
+                                                   <graphic>
+                                                      <Label fx:id="labelNameRecipe" text="&lt;Nom de la recette&gt;" />
+                                                   </graphic>
+                                                </Label>
+                                             </graphic></Label>
+                                                    </graphic></Label>
+                                            </graphic>
+                                        </Label>
+                                    </graphic>
+                                </Label>
+                            </graphic>
+                        </Label>
+                  <ImageView fx:id="recipeImageView" fitHeight="130.0" fitWidth="150.0" layoutX="757.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="40.0" prefWidth="998.0" styleClass="pane" GridPane.rowIndex="1">
+                    <children>
+                        <Label layoutX="28.0" layoutY="21.0" prefHeight="27.0" prefWidth="304.0" text="Liste des ingrédients :" />
+                    </children>
+                </AnchorPane>
+                <TableView fx:id="ingredientTableView" prefHeight="200.0" prefWidth="200.0" styleClass="view" GridPane.rowIndex="2">
+                    <columns>
+                        <TableColumn fx:id="nameIngredientTableColumn" prefWidth="271.7836608886719" styleClass="view" text="Nom" />
+                        <TableColumn fx:id="categoryIngredientTableColumn" minWidth="2.971954345703125" prefWidth="153.21627807617188" styleClass="view" text="Catégorie" />
+                        <TableColumn fx:id="quantityIngredientTableColumn" minWidth="7.208953857421875" prefWidth="109.0595703125" styleClass="view" text="Quantité" />
+                        <TableColumn fx:id="unitIngredientTableColumn" minWidth="8.62127685546875" prefWidth="368.9403076171875" styleClass="view" text="Unité" />
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                </TableView>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="pane" GridPane.rowIndex="3">
+                    <children>
+                        <Label layoutX="32.0" layoutY="20.0" prefHeight="26.0" prefWidth="271.0" text="Liste d'instructions :" />
+                    </children>
+                </AnchorPane>
+                <ListView fx:id="instructionListView" fixedCellSize="50.0" prefHeight="200.0" prefWidth="200.0" styleClass="view" GridPane.rowIndex="4" />
+            </children>
+        </GridPane>
+    </children>
+</GridPane>

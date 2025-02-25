@@ -1,0 +1,231 @@
+.root {
+    -fx-background-color : derive(#6495ED, 95%);
+    -fx-font-size: 12pt;
+    -fx-font-family: "Rockwell";
+}
+
+.label {
+    -fx-font-size: 14pt;
+}
+
+.label-title{
+    -fx-font-size: 24pt;
+    -fx-font-weight: bold;
+}
+
+.label-main-title{
+    -fx-font-size: 48pt;
+    -fx-font-weight: bold;
+}
+
+.button {
+    -fx-background-color: #6495ED;
+    -fx-text-fill: WHITE;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-font-family: "Rockwell";
+    -fx-font-size: 14pt;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+
+.button:hover
+{
+    -fx-background-color : derive(#6495ED, 30%) ;
+}
+
+.button:pressed
+{
+    -fx-background-color : derive(#6495ED, 40%) ;
+}
+
+.button-main-menu {
+    -fx-font-size: 20pt;
+    -fx-background-radius: 20;
+}
+
+.button-delete {
+    -fx-background-color: #DC143C ;
+}
+
+.button-delete:hover
+{
+    -fx-background-color : derive(#DC143C, 30%);
+}
+
+.button-delete:pressed
+{
+    -fx-background-color : derive(#DC143C, 40%);
+}
+
+.button-add {
+}
+
+.button-modify {
+}
+
+.button-import {
+    -fx-background-color: #6B65BA;
+}
+
+.button-import:hover
+{
+    -fx-background-color : derive(#6B65BA, 30%);
+}
+
+.button-import:pressed
+{
+    -fx-background-color : derive(#6B65BA, 40%);
+}
+
+
+.button-back {
+}
+
+.button-visualise {
+    -fx-background-color: Transparent;
+    -fx-text-fill: BLACK;
+    -fx-border-color: derive(#6495ED, 80%);
+}
+
+.button-visualise:hover
+{
+    -fx-background-color : Transparent;
+    -fx-border-color: derive(#6495ED, 30%);
+
+}
+
+.button-visualise:pressed
+{
+    -fx-background-color : Transparent;
+    -fx-border-color: derive(#6495ED, 90%);
+}
+
+
+.pane {
+    -fx-border-color:  LIGHTSTEELBLUE;
+}
+
+.text-field {
+    -fx-background-radius: 20;
+    -fx-background-color : WHITE;
+    -fx-border-radius: 20;
+    -fx-border-color : LIGHTSTEELBLUE;
+}
+
+.combo-box .list-cell  {
+    -fx-background-color: Transparent;
+    -fx-text-fill: BLACK;
+}
+
+.combo-box,
+.choice-box
+{
+    -fx-background-color : WHITE;
+    -fx-background-radius: 20;
+    -fx-border-color : LIGHTSTEELBLUE;
+    -fx-border-radius: 20;
+}
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-cell-size : 20;
+    -fx-background-color: #6495ED;
+}
+
+.table-view .column-header .label{
+   -fx-text-fill: white;
+   -fx-font-weight: bold;
+   -fx-alignment: CENTER;
+}
+
+.table-view .cell{
+   -fx-cell-size: 30;
+   -fx-alignment: CENTER;
+}
+
+.list-view .cell {
+    -fx-background-color: Transparent
+}
+
+.list-view .cell:filled:selected {
+    -fx-background-color: GAINSBORO;
+    -fx-text-fill: BLACK;
+}
+
+.table-view-visualise .cell {
+    -fx-cell-size: 45;
+    -fx-alignment: CENTER;
+    -fx-font-size: 14pt;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: derive(#6495ED, 90%);
+}
+
+.table-view:focused .table-cell {
+    -fx-text-fill: black;
+}
+
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color: transparent;
+	-fx-background-radius: 20;
+
+}
+
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track,
+.list-view .scroll-bar:horizontal .track,
+.list-view .scroll-bar:vertical .track{
+	-fx-background-color: transparent;
+	-fx-border-color:derive(#2D75E8,80%);
+	-fx-background-radius: 20;
+	-fx-border-radius: 20;
+}
+
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb,
+.list-view .scroll-bar:horizontal .thumb,
+.list-view .scroll-bar:vertical .thumb {
+    -fx-background-color: derive(#2D75E8,90%);
+	-fx-background-radius: 20;
+
+}
+
+.spinner {
+    -fx-background-color: transparent;
+}
+
+.spinner:focused,
+.spinner:contains-focus {
+    -fx-background-color: transparent;
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-body-color: WHITE;
+    -fx-background-radius : 20;
+}
+
+.radio-button .radio {
+    -fx-border-width: 1px;
+    -fx-border-color: LIGHTSTEELBLUE;
+    -fx-background-color: WHITE;
+    -fx-border-radius: 15px;
+    -fx-padding: 4px;
+}
+
+
+.image-view-wrapper {
+    -fx-border-color: black;
+    -fx-border-style: solid;
+    -fx-border-width: 2;
+}
+
+
+
+
+
+
+
+
+
