@@ -1,0 +1,158 @@
+/* Beautiful build file */
+
+plugins {
+    id 'java'
+    id 'application'
+    id "com.github.johnrengelman.shadow" version "7.1.2"
+    id "com.github.spotbugs" version "5.0.6"
+    id "com.adarshr.test-logger" version "3.2.0"
+}
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://esri.jfrog.io/artifactory/arcgis'
+    }
+}
+ext { arcgisVersion = '100.13.0' }
+spotbugs { toolVersion = '4.6.0' }
+//==================================================
+application {
+    mainClassName("com.g04autochef.Launcher")
+}
+
+task(populateDB, dependsOn: 'classes', type: JavaExec) {
+    main = 'com.g04autochef.storage.database.demo.PopulateRecipeDEMO'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+java {
+    modularity.inferModulePath = true
+}
+
+test {
+    useJUnitPlatform()
+    /* Uncomment if you want verbose test results */
+    // testLogging {exceptionFormat = 'full'}
+}
+
+run {
+    dependsOn 'copyNatives'
+    dependsOn "copyNativesHome"
+    mainClassName = 'com.g04autochef.Launcher'
+}
+
+//==================================================
+
+// Do not automatically build jars with build or assemble tasks
+// need to use "gradle build -P makeJar"
+jar.onlyIf { project.hasProperty('makeJar') }
+shadowJar.onlyIf { project.hasProperty('makeJar') }
+
+jar {
+    compileJava.options.encoding = 'UTF-8'
+    dependsOn 'shadowJar'
+    dependsOn 'copyNatives'
+    dependsOn "copyNativesHome"
+    manifest {
+        from 'src/main/java/META-INF/MANIFEST.MF'
+    }
+    from {
+        configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+        duplicatesStrategy  'inherit'
+    }
+}
+
+shadowJar{
+    destinationDirectory.set(file("dist/"))
+    archiveVersion.set("2")
+}
+
+//==================================================
+// Do not automatically run spotBugs build or assemble tasks
+// need to use "gradle build -P spotBugs"
+spotbugsMain.onlyIf { project.hasProperty('spotBugs') }
+spotbugsTest.onlyIf { project.hasProperty('spotBugs') }
+
+spotbugsMain {
+    ignoreFailures = true
+    reports {
+        html {
+            required = true
+            outputLocation = file("docs/reports/spotbugs/main/spotbugs.html")
+            stylesheet = 'fancy-hist.xsl'
+        }
+    }
+}
+
+//==================================================
+
+configurations {
+    natives
+}
+
+dependencies {
+    implementation "com.esri.arcgisruntime:arcgis-java:$arcgisVersion"
+    natives "com.esri.arcgisruntime:arcgis-java-jnilibs:$arcgisVersion"
+    natives "com.esri.arcgisruntime:arcgis-java-resources:$arcgisVersion"
+    runtimeOnly "org.slf4j:slf4j-nop:1.7.32"
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    implementation "org.openjfx:javafx-base:17.0.2:win"
+    implementation "org.openjfx:javafx-base:17.0.2:linux"
+    implementation "org.openjfx:javafx-base:17.0.2:mac"
+    implementation "org.openjfx:javafx-controls:17.0.2:win"
+    implementation "org.openjfx:javafx-controls:17.0.2:linux"
+    implementation "org.openjfx:javafx-controls:17.0.2:mac"
+    implementation "org.openjfx:javafx-graphics:17.0.2:win"
+    implementation "org.openjfx:javafx-graphics:17.0.2:linux"
+    implementation "org.openjfx:javafx-graphics:17.0.2:mac"
+    implementation "org.openjfx:javafx-fxml:17.0.2:win"
+    implementation "org.openjfx:javafx-fxml:17.0.2:linux"
+    implementation "org.openjfx:javafx-fxml:17.0.2:mac"
+    implementation 'org.controlsfx:controlsfx:11.1.1'
+
+    implementation "org.json:json:20211205"
+
+    implementation 'org.xerial:sqlite-jdbc:3.36.0.3'
+    implementation 'com.h2database:h2:2.1.210'
+
+    implementation 'com.itextpdf:itext7-core:7.2.2'
+
+    implementation 'com.sun.mail:javax.mail:1.6.2'
+
+    implementation 'com.google.zxing:core:3.4.1'
+    implementation 'com.google.zxing:javase:3.4.1'
+}
+
+sourceSets {
+    test {
+        java {
+            srcDirs = ["test/"] 
+        }
+    }
+}
+
+task copyNativesHome(type: Copy) {
+    description = "Copies the arcgis native libraries into the .arcgis directory for development."
+    group = "build"
+    configurations.natives.asFileTree.each {
+        from(zipTree(it))
+    }
+    into "${System.properties.getProperty("user.home")}/.arcgis/$arcgisVersion"
+}
+
+task copyNatives(type: Copy) {
+    description = "Copies the jniLibs native library into dist/"
+    group = "build"
+    configurations.natives.asFileTree.each {
+        from(zipTree(it))
+    }
+    include "jniLibs/"
+    include "resources/"
+    into "dist/"
+    mkdir "dist/img/"
+    mkdir "dist/img/recipe/"
+    mkdir "dist/img/qr/"
+}

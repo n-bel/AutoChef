@@ -1,0 +1,514 @@
+[
+    {
+        "Nom": "Croque-monsieur",
+        "TypePlat": "Viande",
+        "StylePlat": "Plat principal",
+        "Preparation": ["Beurrez les 8 tranches de pain de mie sur une seule face. Posez 1 tranche de fromage sur chaque tranche de pain de mie. Posez 1 tranche de jambon plié en deux sur 4 tranches de pain de mie. Recouvrez avec les autres tartines (face non beurrée au dessus).",
+        "Dans un bol mélanger le fromage râpé avec le lait, le sel, le poivre et la muscade.",
+        "Répartissez le mélange sur les croque-monsieur.",
+        "Placez sur une plaque au four sous le grill pendant 10 mn."],
+        "NombrePersonne": 4,
+        "Ingredients": [
+            {   "nom": "Pain de mie",
+                "unite":"Unité",
+                "type":"Pain",
+                "quantite":8
+
+            },
+            {
+                "nom": "beurre tendre",
+                "unite": "Gramme",
+                "type": "Produit frais",
+                "quantite": 50
+            },
+            {
+                "nom": "Gruyère râpé",
+                "unite": "Gramme",
+                "type": "Fromage",
+                "quantite": 100
+            },
+            {
+                "nom": "Lait",
+                "unite": "Cuillère à soupe",
+                "type": "Produit laitiers",
+                "quantite": 4
+            },
+            {
+                "nom": "Jambon",
+                "unite": "Unité",
+                "type": "Viande",
+                "quantite": 4
+            },
+            {
+                "nom": "Muscade",
+                "unite": "Cuillère à café",
+                "type": "Epice",
+                "quantite": 1
+            },
+            {
+                "nom": "toastinette",
+                "unite": "Unité",
+                "type": "Fromage",
+                "quantite": 8
+            }
+        ]
+
+    }
+    ,{
+        "Nom": "Tresse tartiflette",
+        "TypePlat": "Viande",
+        "StylePlat": "Entrée",
+        "Preparation":["Plonger les pommes de terres épluchées dans une casserole d'eau bouillante salée.",
+        "Faire revenir les lardons et l'oignon émincé dans une poêle, sans ajouter de matière grasse.",
+        "Préchauffer le four à 200°C (thermostat 7).",
+        "Dérouler la pâte feuilletée sur une plaque de four recouverte de papier cuisson. Disposer des rondelles de pommes de terre en haut au centre de la pâte, et descendre jusqu'au centre inférieur de la pâte.",
+        "Couvrir avec les lardons et déposer enfin quelques tranches de fromage.",
+        "Couper des bandes de pâte d'environ 2 cm de large, en partant de la garniture et en allant vers le bord. Couper les bandes légèrement en diagonale. Faire ces bandes de chaque côté.",
+        "Prendre les 2 premières bandes et les replier sur la garniture en les croisant. Couper l'excès de pâte dans la longueur. Recommencer l'opération avec toutes les bandes.",
+        "Bien enfermer la garniture en soudant les bords des 2 extrémités.",
+        "Badigeonner de jaune d'oeuf et enfourner 20 minutes.",
+        "Il est possible de parsemer de fromage râpé avant d'enfourner."],
+        "NombrePersonne": 2,
+        "Ingredients": [
+            {   "nom": "Pomme de Terre",
+                "unite":"Unité",
+                "type":"Légume",
+                "quantite":"2"
+
+            },
+            {   "nom":"Lardon",
+                "unite":"Gramme",
+                "type":"Viande",
+                "quantite": 120
+
+            },
+            {   "nom":"Roblochon",
+                "unite":"Gramme",
+                "type":"Fromage",
+                "quantite": 120
+
+            },
+            {   "nom":"pate feuilletée",
+                "unite":"Unité",
+                "type":"Pate",
+                "quantite": 1
+
+            },
+            {   "nom":"Oeuf",
+                "unite":"Unité",
+                "type":"Produit frais",
+                "quantite": 1
+
+            }
+        ]
+    },
+    {   "Nom": "La meilleure recette de pâte à crêpes",
+        "TypePlat": "Végétarien",
+        "StylePlat": "Dessert",
+        "Preparation":["Mettre la farine dans une terrine et former un puits.",
+        "déposer les oeufs entiers, le sucre, l'huile et le beurre.",
+        "Mélanger délicatement avec un fouet en ajoutant au fur et à mesure le lait. La pâte ainsi obtenue doit avoir une consistance d'un liquide légèrement épais.",
+        "Parfumer de rhum.",
+        "Faire chauffer une poêle antiadhésive et la huiler très légèrement à l'aide d'un papier Essuie-tout. Y verser une louche de pâte, la répartir dans la poêle puis attendre qu'elle soit cuite d'un côté avant de la retourner. Cuire ainsi toutes les crêpes à feu doux."],
+        "NombrePersonne": 5,
+        "Ingredients":[
+            {   "nom":"Farine",
+                "unite":"Gramme",
+                "type":"Patisserie",
+                "quantite": 300},
+            {   "nom":"Sucre",
+                "unite":"Cuillère à café",
+                "type":"Patisserie",
+                "quantite": 3},
+            {
+                "nom": "Huile",
+                "unite": "Cuillère à café",
+                "type":  "Huile",
+                "quantite": 2},
+            {
+                "nom": "Beurre fondu",
+                "unite": "Gramme",
+                "type": "Produit frais",
+                "quantite": 50
+            },
+            {
+                "nom": "Lait",
+                "unite": "Gramme",
+                "type": "Produit laitiers",
+                "quantite": 60
+            },
+            {
+                "nom": "Oeuf",
+                "unite": "Unité",
+                "type": "Produit frais",
+                "quantite": 3
+            }
+        ]
+
+    },{
+        "Nom": "Nouilles chinoises aux légumes",
+        "TypePlat":"Végétarien",
+        "StylePlat": "Plat principal",
+        "Preparation":["Faire cuire les nouilles chinoises selon l'indication sur le paquet (généralement 5 min).",
+        "Pendant ce temps, égoutter les légumes et les faire revenir dans un peu d'huile. Diluer le miso dans un peu d'eau très chaude.",
+        "Egoutter les nouilles et les rajouter aux légumes. Bien mélanger avec le gingembre et arroser de miso dilué ou de sauce de soja.",
+        "Servir chaud en parsemant de germes de Luzerne."],
+        "NombrePersonne": 2,
+        "Ingredients":[
+            {
+                "nom":  "huile de sésame",
+                "unite":"Cuillère à soupe",
+                "type":"Huile",
+                "quantite": 1
+            },
+            {   "nom": "Gingembre",
+                "unite": "Unité",
+                "type": "Légume",
+                "quantite": 1
+
+            },
+            {
+                "nom": "Paquet de nouilles",
+                "unite": "Unité",
+                "type": "Pate",
+                "quantite": 1
+            },{
+                "nom": "Maïs",
+                "unite": "Boite",
+                "type": "Produit frais",
+                "quantite": 1
+            },
+            {
+                "nom": "Sauce soja",
+                "unite": "Cuillère à soupe",
+                "type": "Sauce",
+                "quantite": 1
+            }]
+
+},
+
+
+
+
+
+
+
+
+
+    {
+        "Nom": "Verrine Tomates Avocat Fraise",
+        "TypePlat":"Végétarien",
+        "StylePlat": "Entrée",
+        "Preparation":["Mettre à bouillir 250 ml de lait de coco, la vanille ouverte avec le bâton, 5-6 pincées de Massala, du sel et du poivre. ",
+            "Une fois passé a ébullition, passer au tamis et remettre sur le feu doux avec un gramme d'Agar Agar en fouettant. Étaler sur un papier film, laisser reposer au réfrigérateur 30minutes. ",
+            "Vous devez disposer de 6 rectangles de 7cm sur 18 environ.",
+            "Le riz:",
+            "Dans une casserole, verser un mug de riz, 125ml de lait de coco, un mug et demi d'eau, du sel, du poivre. Laisser cuire à couvert jusqu'à absorption. Laisser reposer.",
+            "Le poisson:",
+            "Séparer la peau et la chair du poisson. ",
+            "Dans un papier aluminium, disposer un pavé de saumon, du sel, du poivre, un filet d'huile d'olive, deux branches de ciboulette, une branche de coriandre, une feuille de menthe. Refermer en papillote.  ",
+            "Réitérer les mêmes opérations pour les 6 pavés de saumon. Faire cuire 10-12 minutes au four à 180°C (Le poisson doit rester rosé au centre). ",
+            "Une fois sorti du four, prélever le jus de deux des poissons et la réserver.",
+            "Faire griller la peau au four avec un filet d'huile d'olive et de la fleur de sel quelques minutes en position gril. Elle doit être craquante.",
+            "Les carottes:",
+            "Éplucher les carottes. Les passer à la mandoline pour obtenir des lamelles. Plonger quelques minutes dans une casserole avec un litre et demi d'eau bouillante et 4 cuillères à soupe de sucre, du sel, du poivre. Elles doivent être al dente. ",
+            "Egouter et passer aussitôt dans un bol d'eau glacée.",
+            "La sauce:",
+            "Passer au mixer les framboises, le jus d'un demi citron, 6 branches de Coriandre, 4 cuillères à café d'huile d'olive, 8 cuillères à café de sauce soja, sel, poivre, 4-5 pincées de Massala, une clémentine épluchée. ",
+            "Passer au tamis. Il faudra ajouter la sauce de cuisson des papillotes de poisson.",
+            "Le dressage:",
+            "Concasser grossièrement les pignons de pain et les noix.",
+            "Pour réaliser les rouleaux de riz, se passer les mains sous l'eau froide entre chaque préparation, former douze rouleaux de 4cm de diamètre sur 5cm de long environ.",
+            "Former également 6 rouleaux de tagliatelles de carottes de même dimension.",
+            "Sortez le poisson des papillotes, bien l'égoutter, le recouvrir d'un rectangle de gelée, y planter des chips de peau de poisson.",
+            "Dresser deux rouleaux de riz par assiette, ainsi qu'un rouleau de tagliatelles de carottes entre chaque, verticalement. ",
+            "Saupoudrez le riz du mélange de pignons et noix ainsi que quelques copeaux de noix de coco.",
+            "Dresser la sauce aux framboises entre le poisson et les rouleaux de riz et carotte."],
+        "NombrePersonne": 6,
+        "Ingredients":[
+            {
+                "nom":"Carotte",
+                "unite":"Gramme",
+                "type":"Légume",
+                "quantite": 300
+            },
+            {
+                "nom":"citron",
+                "unite": "Unité",
+                "type": "frais",
+                "quantite": 1
+            },
+            {
+                "nom": "riz",
+                "unite": "Gramme",
+                "type": "Féculent",
+                "quantite": 300
+            },
+            {
+                "nom": "branche de coriandre",
+                "unite": "Unité",
+                "type": "Herbe",
+                "quantite": 1
+            },
+            {
+                "nom": "pignons de pain",
+                "unite": "Gramme",
+                "type": "Pain",
+                "quantite": 100
+            },
+            {
+                "nom": "cernaux de noix",
+                "unite": "Gramme",
+                "type": "frais",
+                "quantite": 100
+            }
+
+        ]
+
+    },
+    {
+    "Nom":"Coussin de légumes",
+    "TypePlat":"Végétarien",
+    "StylePlat":"Accompagnement",
+    "Preparation":["Coupez les deux bouts des courgettes. Lavez-les, coupez-les en rondelles. Faites de même avec les aubergines.",
+            "Epluchez les carottes, lavez-les, coupez-les en rondelles. Lavez les pommes de terre. Epluchez-les bien, coupez-les en rondelles.",
+            "Dans une grande poêle, faites fondre 40 g de beurre. Mettez-y les pommes de terre et laissez-les cuire à feu moyen 10 mn en veillant à ce qu'elles ne dorent pas trop. Salez, poivrez. Mettez-les sur un plat.",
+            "Faites fondre encore 40 g de beurre dans la poêle. Mettez-y les courgettes. Cuisez-les 10 mn. Salez, poivrez. Mettez-les sur un autre plat. Procédez de la même façon avec les carottes et les aubergines.",
+            "Passez le comté à la moulinette à gros trous.",
+            "Tapissez un moule à bord haut avec une feuille de papier d'aluminium. Enduisez-le avec le reste de du beurre.",
+            "Mettez dans le fond les courgettes. Saupoudrez-les avec un tiers du comté, puis faites une couche avec les aubergines. Mettez un autre tiers de comté. Faites une couche de pommes de terre. Mettez le reste du comté. Finissez par une couche de carottes. Tassez bien tous les éléments en appuyant.",
+            "Cuisez à four chaud (210°C, thermostat 7) pendant 20 mn. Démoulez les légumes en retournant le moule. Otez la feuille d'aluminium. Servez chaud ou tiède selon vos préférences."],
+    "NombrePersonne": 6,
+    "Ingredients":[
+    {
+        "nom":"Carotte",
+        "unite":"Gramme",
+        "type":"Légume",
+        "quantite":300
+    },
+    {
+        "nom":"Pomme de Terre",
+        "unite":"Gramme",
+        "type":"Légume",
+        "quantite":400
+    },
+    {
+        "nom":"Courgette",
+        "unite":"Gramme",
+        "type":"Légume",
+        "quantite":400
+    },
+    {
+        "nom":"Aubergine",
+        "unite":"Gramme",
+        "type":"Légume",
+        "quantite":200
+    },
+    {
+        "nom":"Beurre",
+        "unite":"Gramme",
+        "type":"Produit frais",
+        "quantite":160
+    },
+    {
+        "nom":"Comté",
+        "unite":"Gramme",
+        "type":"Fromage",
+        "quantite":120
+    },
+    {
+        "nom":"Poivre",
+        "unite":"Millilitre",
+        "type":"Epice",
+        "quantite":1
+    },
+    {
+        "nom":"Sel",
+        "unite":"Gramme",
+        "type":"Epice",
+        "quantite":1
+    }
+    ]
+},
+    {
+    "Nom":"Purée de châtaigne à l amande",
+    "TypePlat":"Végétarien",
+    "StylePlat":"Accompagnement",
+    "Preparation":["Inciser les châtaignes et les passer au micro onde 1mn pour enlever la peau plus facilement, les éplucher.",
+        "Faire bouillir le lait d'amande et y plonger les châtaignes épluchées.",
+        "Baisser le feu et faire cuire à feu doux pendant 45 minutes. Couvrir. ",
+        "Ajouter encore un peu de lait d'amande en cours de cuisson et/ou d'eau pour ramollir les châtaignes. Saler et poivrer selon goût.",
+        "Écraser les châtaignes à la fourchette puis au Mixeur. ",
+        "Y mélanger la purée d'amande.",
+        "C'est prêt. Bon appétit !"],
+    "NombrePersonne":2,
+    "Ingredients":[
+    {
+        "nom":"Purée d amande",
+        "unite":"Boite",
+        "type":"Fruit sec",
+        "quantite":2
+    },
+    {
+        "nom":"Châtaignes",
+        "unite":"Gramme",
+        "type":"Fruit",
+        "quantite":250
+    },
+    {
+        "nom":"Lait d amande",
+        "unite":"Millilitre",
+        "type":"Produit frais",
+        "quantite":500
+    }
+    ]
+    },
+    {
+        "Nom":"Pancakes",
+        "TypePlat":"Végétarien",
+        "StylePlat":"Dessert",
+        "Preparation":[
+            "Battre grossièrement l'oeuf et le sucre dans un saladier.",
+            "Y rajouter le beurre fondu ou l'huile.",
+            "Mélanger à part la farine et la levure, puis en mélanger la moitié avec la préparation.",
+            "Délayer progressivement avec le lait tout en rajoutant l'autre moitié de farine petit à petit (cela évitera de créer des grumeaux).",
+            "Aucun temps de repos n'est nécessaire, si ce n'est juste le temps de faire chauffer votre poêle à feu moyen. Huilez ou beurrez la poêle à l'aide de papier essuie-tout.",
+            "A l'aide d'une petite louche ou d'une grosse cuillère à sauce, déposer des \"ronds\" dans la poêle.",
+            "Lorsque les bulles apparaissent et éclatent, retourner les pancakes et ne pas les laisser plus d'une min sur l'autre face."],
+        "NombrePersonne":2,
+        "Ingredients":[
+            {
+                "nom":"Sucre",
+                "unite":"Cuillère à soupe",
+                "type":"Epice",
+                "quantite":1
+            },
+            {
+                "nom":"Levure",
+                "unite":"Cuillère à café",
+                "type":"Autre",
+                "quantite":250
+            },
+            {
+                "nom":"Lait",
+                "unite":"Millilitre",
+                "type":"Produit laitiers",
+                "quantite":200
+            },
+            {
+                "nom":"Oeuf",
+                "unite":"Unité",
+                "type":"Produit frais",
+                "quantite":1
+            }
+        ]
+    },
+    {
+        "Nom":"Cake au chocolat et amandes",
+        "TypePlat":"Végétarien",
+        "StylePlat":"Dessert",
+        "Preparation":[
+            "Faire fondre le chocolat (en morceaux) au bain-marie avec 5 cuillères à soupe d'eau (ou le faire au micro-ondes). ",
+            "Dans un saladier, battre les oeufs avec le sucre, jusqu'à ce que le mélange blanchisse. Ajouter la farine, la levure, le beurre fondu, la poudre d'amandes, et le chocolat. Mélanger. ",
+            "Verser la préparation jusqu'à mi-hauteur d'un moule à cake beurré. ",
+            "Mettre à cuire dans un four préchauffé à 180°C (thermostat 6 ) pendant 30 à 35 min. ",
+            "Attendre 5 min avant de démouler. Laisser refroidir."],
+        "NombrePersonne":6,
+        "Ingredients":[
+            {
+                "nom":"Chocolat pâtissier",
+                "unite":"Gramme",
+                "type":"Patisserie",
+                "quantite":150
+            },
+            {
+                "nom":"Sucre",
+                "unite":"Gramme",
+                "type":"Epice",
+                "quantite":100
+            },
+            {
+                "nom":"Levure",
+                "unite":"Cuillère à café",
+                "type":"Autre",
+                "quantite":1
+            },
+            {
+                "nom":"Beurre",
+                "unite":"Gramme",
+                "type":"Produit laitiers",
+                "quantite":80
+            },
+            {
+                "nom":"Oeuf",
+                "unite":"Unité",
+                "type":"Produit frais",
+                "quantite":3
+            },
+            {
+                "nom":"Poudre d amandes",
+                "unite":"Gramme",
+                "type":"Autre",
+                "quantite":50
+            }
+        ]
+    },
+    {
+        "Nom":"Rôti de porc",
+        "TypePlat":"Viande",
+        "StylePlat":"Mijoté",
+        "Preparation":[
+            "Piquer le rôti de petites gousses d'ail coupées en deux ou trois, suivant grosseur.",
+            "Dans une cocotte, le faire dorer quelques minute dans du beurre sur toute les faces. Saler et poivrer.",
+            "Quand il est bien coloré, le retirer de la cocotte et le badigeonner avec la moutarde forte, remettre ensuite à cuire avec les échalotes, couvrir et laisser mijoter à feu doux pendant +/- 1h30, en retournant de temps en temps.",
+            "Rajouter de l'eau régulièrement, dès lors que tout le liquide est évaporé.",
+            "Après ce temps, retirer le rôti et les échalotes, puis rectifier la sauce si nécessaire (avec sel et poivre), puis ajouter la crème fraîche selon votre goût.",
+            "Couper le rôti en tranches, puis le servir nappé de sauce et accompagné des petites échalotes entières."],
+        "NombrePersonne":6,
+        "Ingredients":[
+            {
+                "nom":"Ail",
+                "unite":"Unité",
+                "type":"Légume",
+                "quantite":1
+            },
+            {
+                "nom":"Moutarde",
+                "unite":"Cuillère à soupe",
+                "type":"Autre",
+                "quantite":2
+            },
+            {
+                "nom":"Poivre",
+                "unite":"Cuillère à café",
+                "type":"Epice",
+                "quantite":1
+            },
+            {
+                "nom":"Sel",
+                "unite":"Cuillère à café",
+                "type":"Epice",
+                "quantite":1
+            },
+            {
+                "nom":"Rôti de porc",
+                "unite":"Gramme",
+                "type":"Viande",
+                "quantite":600
+            },
+            {
+                "nom":"Echalote",
+                "unite":"Unité",
+                "type":"Légume",
+                "quantite":10
+            },
+            {
+                "nom":"Crème fraiche",
+                "unite":"Millilitre",
+                "type":"Autre",
+                "quantite":400
+            }
+        ]
+    }
+
+]
